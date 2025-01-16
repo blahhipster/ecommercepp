@@ -1,0 +1,203 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+.website {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar Styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: -100px;
+}
+
+#title {
+  font-family: "Moirai One", cursive;
+  font-size: 36px;
+  margin: 0;
+  margin-top: -20px;
+}
+
+nav ul {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 16px;
+  cursor: pointer;
+  color: rgb(77, 77, 77);
+  font-family: Kumbh Sans;
+}
+
+nav ul:hover {
+  color: rgb(173, 173, 173);
+}
+
+
+
+/* Divider */
+hr {
+  border: 0;
+  border-top: 1px solid grey;
+  margin-bottom: 40px;
+  width: 1400px;
+  margin-left: -100px;
+}
+
+/* Main Layout */
+main {
+  display: flex;
+  gap: 40px;
+}
+
+.imageSection {
+  flex: 1;
+}
+
+.detailsSection {
+  font-family: Kumbh Sans;
+  flex: 1;
+}
+
+/* Image Section */
+.imageSection img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.thumbnails {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.thumbnails img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.thumbnails img:hover,
+.thumbnails img.active {
+  border-color: orange;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Details Section */
+.detailsSection h5 {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: gray;
+  margin-bottom: 5px;
+}
+
+.detailsSection h1 {
+  font-size: 57px;
+  margin-bottom: 15px;
+}
+
+.detailsSection p {
+  font-size: 16px;
+  color: gray;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.detailsSection .price {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.detailsSection .price h2 {
+  font-size: 28px;
+  color: rgb(0, 0, 0);
+  margin: 0;
+}
+
+.detailsSection .price strike {
+  font-size: 16px;
+  color: gray;
+}
+
+.counterpart{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+}
+
+#fullcounter{
+  display: flex;
+  background-color:rgb(165, 164, 164);
+  padding: auto;
+  align-items: center;
+  border-radius: 6px;
+}
+
+#fullcounter button{
+  border: none;
+  background-color: rgb(165, 164, 164);
+  color: orange;
+  font-weight: bolder;
+  font-size: x-large;
+  cursor: pointer;
+}
+
+#zero{
+  padding: 10px 30px;
+  font-size: medium;
+  font-family: Kumbh Sans;
+
+}
+
+#cart{
+  padding: 10px 80px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Kumbh Sans;
+}
+button img{
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+button:hover{
+  background-color: darkorange;
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .imageSection,
+  .detailsSection {
+    max-width: 100%;
+  }
+}
